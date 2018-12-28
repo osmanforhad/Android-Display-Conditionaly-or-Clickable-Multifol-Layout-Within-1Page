@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here"
+        android:padding="10dp"
+        android:background="#00aee7"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:onClick="seeOther"
+        android:textStyle="bold" />
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="First Pic"
+    android:padding="10dp"
+    android:background="#00aee7"
+    android:textSize="30sp"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:layout_marginTop="65dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/firstpic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondlayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Second Pic"
+            android:padding="10dp"
+            android:background="#00aee7"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="65dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/secondpic"/>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
